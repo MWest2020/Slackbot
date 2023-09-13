@@ -30,3 +30,4 @@ jobs:
       run: python ./app.py
       env:
         SLACK_API_TOKEN: ${{ secrets.SLACK_API_TOKEN }}
+        SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
