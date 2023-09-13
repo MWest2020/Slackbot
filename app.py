@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     if current_time.hour == target_time.hour and current_time.minute == target_time.minute:
         SLACK_API_TOKEN = os.getenv("SLACK_API_TOKEN")  # Fetch from environment variables
-        CHANNEL_ID = '#general'  # Channel ID where the message should be posted
+        CHANNEL_ID = os.getenv("SLACK_CHANNEL_ID")    # Channel ID where the message should be posted
         MESSAGE = ":rotating_light:ISSUES + UREN. Tot over 10 min.:rotating_light:"
 
         send_slack_message(SLACK_API_TOKEN, CHANNEL_ID, MESSAGE)
