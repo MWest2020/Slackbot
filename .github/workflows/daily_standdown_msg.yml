@@ -1,6 +1,7 @@
 name: Daily Slackbot Message
 
 on:
+  workflow_dispatch:
   schedule:
     # Standard time (last Sunday in October to last Saturday in March)
       - cron: '30 15 * * 1-5'
