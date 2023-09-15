@@ -24,7 +24,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install slack-sdk
+        pip install slack-sdk requests pytz
+        
 
     - name: Run the script
       run: python ./app.py
