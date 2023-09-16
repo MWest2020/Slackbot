@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
   schedule:
     # Standard time (last Sunday in October to last Saturday in March)
-      - cron: '30 15 * * 1-5'
+      - cron: '28 14 * * 1-5'
     
     # Daylight saving time (last Sunday in March to last Saturday in October)
-      - cron: '30 14 * * 1-5'
+      - cron: '28 13 * * 1-5'
 
 jobs:
   send-message:
