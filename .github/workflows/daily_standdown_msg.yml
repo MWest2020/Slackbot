@@ -3,11 +3,11 @@ name: Daily Slackbot Message
 on:
   workflow_dispatch:
   schedule:
-    # Standard time (last Sunday in October to last Saturday in March)
-      - cron: '28 15 * * 1-5'
+    # # Standard time (last Sunday in October to last Saturday in March)
+    #   - cron: '28 15 * * 1-5'
     
-    # # Daylight saving time (last Sunday in March to last Saturday in October)
-    #   - cron: '28 13 * * 1-5'
+    # Daylight saving time (last Sunday in March to last Saturday in October)
+      - cron: '28 15 * * 1-5'
 
 jobs:
   send-message:
