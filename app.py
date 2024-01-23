@@ -63,7 +63,7 @@ def send_slack_message(token, channel, message):
 if __name__ == "__main__":
     SLACK_API_TOKEN = os.getenv("SLACK_API_TOKEN")  # Fetch from environment variables
     CHANNEL_ID = os.getenv("SLACK_CHANNEL_ID")  # Channel ID where the message should be posted
-    MESSAGE = ":rotating_light:ISSUES + UREN gedaan? Indien vergeten, doen && report out, AUB.:rotating_light:"
+    MESSAGE = ":rotating_light:ISSUES, UREN & REPORT OUT gedaan? Indien vergeten, wil je dat aub nog doen?.:rotating_light:"
 
     # Print the variables for debugging (excluding the token for security)
     print(f"Channel ID: {CHANNEL_ID}")
